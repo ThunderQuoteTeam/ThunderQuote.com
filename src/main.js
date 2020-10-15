@@ -37,7 +37,8 @@ new Vue({
   data() {
     return {
       isLarge: checkWidth() > largeWidthStarts,
-      isMobile: checkWidth() <= mobileWidthEnds
+      isMobile: checkWidth() <= mobileWidthEnds,
+      primary: '#6060ab',
     }
   },
   methods: {

@@ -1,5 +1,5 @@
 <template>
-<div class="mb-2 card-pseudo-link animated-cards" :id="cardId" v-anime="cardAnim">
+<div class="mb-2 card-pseudo-link animated-cards" :id="cardId" v-anime="cardAnim" @mouseover.stop="fillIt" @mouseleave.stop="unfillIt">
   <b-card 
         class="my-2"
         variant="primary"
@@ -14,7 +14,7 @@
                 </div>
             </b-card-title>
             <div v-anime="cardBodyAnim">
-                <b-card-text class="text-primary">
+                <b-card-text>
                     {{cardBodyText}}
                 </b-card-text>
 
@@ -41,6 +41,12 @@ export default {
     methods: {
         visitLink(url){
             window.location.href = url;
+        },
+        fillIt(self){
+            console.log(self.srcElement)
+        },
+        unfillIt(self){
+            console.log(self.Element)
         }
     }
 }
@@ -59,20 +65,48 @@ export default {
 }
 
 article .card-body .card-text {
-    min-height: 6rem;
+    min-height: 10.5rem;
     font-weight: 600;
 }
 
 .card-pseudo-link article{
-    transition: all 0.3s;
+    transition: all 0.3s linear;
     cursor: pointer;
     border-radius: 15px;
 }
 
-.card-pseudo-link article:hover {
-    transform: scale(1.03);
+.card-pseudo-link:hover article{ 
+     transform: scale(1.03);
 }
 
 
+.animated-cards {
+    & svg {
+        path {
+            stroke: $primary;
+        }
+
+        g {
+            fill: rgba(255,255,255,0);
+        }
+    }
+
+    
+    & .card-text {
+        color: $primary;
+    }
+}
+
+.animated-cards:hover {
+    & .card-titles {
+        font-family: Lato-Regular;
+    }
+
+    & svg {
+        g {
+            fill: $primary;
+        }
+    }
+}
 
 </style>

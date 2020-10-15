@@ -26,9 +26,9 @@
 
                     <div class="hero-text pt-3">
                         <h2 class="px-2 pb-2" v-anime="a('tqFadeSlideUp', 1500, 1500)">What Every Business Needs</h2>
-                        <h3 class="px-2 pb-2" v-anime="a('tqFadeSlideUp', 2500, 1500)">We provide a wide range of varieties for all your digital needs. 
+                        <h3 class="px-2 pb-2" v-anime="a('tqFadeSlideUp', 2500, 1500)">ThunderQuote is an all-in-one digital services provider for organisations of all sizes and needs. 
                             <br> 
-                            Here in ThunderQuote, we believe in digital transformation that will bring your busineses to the next level.</h3>
+                            From the non-profit sector to B2B companies, our digitally transformative services will push your organisation's IT capabilities to the next level.</h3>
 
                             <b-row class="justify-content-center px-4 mt-2">
                                 <b-card-group class="my-3 d-flex justify-content-center flex-wrap" deck>
@@ -38,7 +38,7 @@
                                         :cardTitleAnim="a('tqFadeSlideUp', 3500)"
                                         cardTitle="Non-profits"
                                         :cardBodyAnim="a('tqFadeSlideUp', 4000)"
-                                        cardBodyText="Explore our services and offerings for Non-governmental organisations / Non-profit organisations."
+                                        cardBodyText="Explore our free IT resource hub for non-profits, including digital implementation handbooks, technology discounts, governance guides, grant & funding information and more."
                                         cardButtonText="Visit ThunderQuote.org"
                                         cardLink="https://thunderquote.org"
                                     >
@@ -53,7 +53,7 @@
                                         :cardTitleAnim="a('tqFadeSlideUp', 4500)"
                                         cardTitle="eMeetings"
                                         :cardBodyAnim="a('tqFadeSlideUp', 5000)"
-                                        cardBodyText="e-Meeting is the way of the future and ThunderQuote is dedicated in keeping you covered."
+                                        cardBodyText="Secure your online meetings with ThunderQuote SecureMeet. Enabled by SingPass, our industry-leading identity verification and authorisation app will keep your e-meetings safe and confidential."
                                         cardButtonText="Visit SecureMeet"
                                         cardLink="https://securemeet.io"
                                     >
@@ -69,7 +69,7 @@
                                         :cardTitleAnim="a('tqFadeSlideUp', 5700)"
                                         cardTitle="eProcurement"
                                         :cardBodyAnim="a('tqFadeSlideUp', 6200)"
-                                        cardBodyText="From IT solutions to renovation contractors, we bring you the right local B2B vendors for every project your business needs to grow."
+                                        cardBodyText="Digitalise your purchasing with ThunderQuote's free eProcurement system. Upload RFQs in over 45 categories, receive quotes from our vendor database, and keep track of your organisation's purchases, all within one platform."
                                         cardButtonText="Visit Our Procurement Portal"
                                         cardLink="https://procurement.thunderquote.com"
                                     >
@@ -116,26 +116,25 @@ export default {
             duration: 1500
         }, { 
             target: 'securemeet',
-            delay :4500,
-            duration: 500
+            delay :4200,
+            duration: 1200
         }, {
             target: 'e-procurement',
-            delay : 6000, 
-            duration: 2200
+            delay : 6200, 
+            duration: 2400
         }];
 
         delayArr.forEach(d => {
             this
-            .$anime({
+            .$anime.timeline({ loop: false })
+            .add({
                 targets: `#${d.target}-logo path`,
                 strokeDashoffset: [anime.setDashoffset, 0],
                 easing: 'easeInOutSine',
                 duration: d.duration,
                 delay: function(el, i) { return i * 250 + d.delay},
-                
             })
         });
-        
     },
     components: {
         TQLogo,

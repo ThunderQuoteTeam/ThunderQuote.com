@@ -14,7 +14,8 @@ module.exports = {
         config
             .plugin('html')
             .tap(args => {
-                args[0].title = 'ThunderQuote';
+                args[0].title = 'ThunderQuote - Empowering organisations via digital transformation';
+                args[0].description = 'ThunderQuote specialises in creating open, sector-wide IT infrastructure, websites and applications, delivering cost savings via automation and economies-of-scale for the non-profit and public sector.'
                 return args;
             });
         }

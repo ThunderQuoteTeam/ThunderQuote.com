@@ -1,8 +1,13 @@
-$primary: #655aaf;
+$primary: #6060ab;
 
 @font-face {
     font-family: 'Lato';
     src: url('~@/main/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('~@/main/Lato-Regular.ttf') format('truetype');
 }
 
 @font-face {
