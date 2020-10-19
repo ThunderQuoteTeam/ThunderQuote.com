@@ -1,5 +1,5 @@
 <template>
-<div class="mb-2 card-pseudo-link animated-cards" :id="cardId" v-anime="cardAnim" @mouseover.stop="fillIt" @mouseleave.stop="unfillIt">
+<div class="mb-2 card-pseudo-link animated-cards" :id="cardId" v-anime="cardAnim">
   <b-card 
         class="my-2"
         variant="primary"
@@ -41,12 +41,6 @@ export default {
     methods: {
         visitLink(url){
             window.location.href = url;
-        },
-        fillIt(self){
-            console.log(self.srcElement)
-        },
-        unfillIt(self){
-            console.log(self.Element)
         }
     }
 }
@@ -58,6 +52,7 @@ export default {
 }
 
 .card-titles {
+    min-height: 3.5rem;
     color: $primary;
     margin-top: 1.3rem;
     margin-bottom: 1.3rem;
@@ -65,7 +60,7 @@ export default {
 }
 
 article .card-body .card-text {
-    min-height: 10.5rem;
+    min-height: 12rem;
     font-weight: 600;
 }
 

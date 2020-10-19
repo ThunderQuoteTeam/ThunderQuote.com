@@ -25,20 +25,19 @@
                     </div>
 
                     <div class="hero-text pt-3">
-                        <h2 class="px-2 pb-2" v-anime="a('tqFadeSlideUp', 1500, 1500)">What Every Business Needs</h2>
-                        <h3 class="px-2 pb-2" v-anime="a('tqFadeSlideUp', 2500, 1500)">ThunderQuote is an all-in-one digital services provider for organisations of all sizes and needs. 
+                        <h3 class="px-5 pb-2" v-anime="a('tqFadeSlideUp', 1500, 1500)">ThunderQuote is an all-in-one IT services provider, specialising in digital solutions for the non-profit & public sectors. 
                             <br> 
-                            From the non-profit sector to B2B companies, our digitally transformative services will push your organisation's IT capabilities to the next level.</h3>
+                            Our digital support services & tools will push your organisation's IT capabilities to the next level. We've worked with numerous non-profits, public sector organisations, and MNCs to digitally transform their company, from the inside out.</h3>
 
                             <b-row class="justify-content-center px-4 mt-2">
                                 <b-card-group class="my-3 d-flex justify-content-center flex-wrap" deck>
                                     <AnimatedCard 
                                         cardId="ngo-card"
-                                        :cardAnim="a('tqFadeSlideUp', 3000)"
-                                        :cardTitleAnim="a('tqFadeSlideUp', 3500)"
-                                        cardTitle="Non-profits"
-                                        :cardBodyAnim="a('tqFadeSlideUp', 4000)"
-                                        cardBodyText="Explore our free IT resource hub for non-profits, including digital implementation handbooks, technology discounts, governance guides, grant & funding information and more."
+                                        :cardAnim="a('tqFadeSlideUp', 2000)"
+                                        :cardTitleAnim="a('tqFadeSlideUp', 2500)"
+                                        cardTitle="Non-Profit Digital Transformation"
+                                        :cardBodyAnim="a('tqFadeSlideUp', 3000)"
+                                        cardBodyText="Explore our free non-profit IT resource hub, including digitalisation handbooks, technology discounts, governance guides, grant information and more. Discover our IT support services for NPOs, such as system implementations, IT support & maintenance, and a range of freemium digital tools."
                                         cardButtonText="Visit ThunderQuote.org"
                                         cardLink="https://thunderquote.org"
                                     >
@@ -49,11 +48,11 @@
 
                                     <AnimatedCard 
                                         cardId="securemeet-card"
-                                        :cardAnim="a('tqFadeSlideUp', 4500)"
-                                        :cardTitleAnim="a('tqFadeSlideUp', 4500)"
-                                        cardTitle="eMeetings"
-                                        :cardBodyAnim="a('tqFadeSlideUp', 5000)"
-                                        cardBodyText="Secure your online meetings with ThunderQuote SecureMeet. Enabled by SingPass, our industry-leading identity verification and authorisation app will keep your e-meetings safe and confidential."
+                                        :cardAnim="a('tqFadeSlideUp', 3500)"
+                                        :cardTitleAnim="a('tqFadeSlideUp', 3500)"
+                                        cardTitle="Secure eMeetings"
+                                        :cardBodyAnim="a('tqFadeSlideUp', 4000)"
+                                        cardBodyText="Secure your online meetings with ThunderQuote SecureMeet. Enabled by SingPass, our industry-leading identity verification and authorisation app will keep your e-meetings safe and confidential, with authenticated voting, nominations, quorum tracking, and more."
                                         cardButtonText="Visit SecureMeet"
                                         cardLink="https://securemeet.io"
                                     >
@@ -65,10 +64,10 @@
 
                                     <AnimatedCard 
                                         cardId="securemeet-card"
-                                        :cardAnim="a('tqFadeSlideUp', 5300)"
-                                        :cardTitleAnim="a('tqFadeSlideUp', 5700)"
+                                        :cardAnim="a('tqFadeSlideUp', 4300)"
+                                        :cardTitleAnim="a('tqFadeSlideUp', 4700)"
                                         cardTitle="eProcurement"
-                                        :cardBodyAnim="a('tqFadeSlideUp', 6200)"
+                                        :cardBodyAnim="a('tqFadeSlideUp', 5200)"
                                         cardBodyText="Digitalise your purchasing with ThunderQuote's free eProcurement system. Upload RFQs in over 45 categories, receive quotes from our vendor database, and keep track of your organisation's purchases, all within one platform."
                                         cardButtonText="Visit Our Procurement Portal"
                                         cardLink="https://procurement.thunderquote.com"
@@ -112,15 +111,15 @@ export default {
 
         const delayArr = [{
             target: 'ngo',
-            delay : 4000,
+            delay : 3000,
             duration: 1500
         }, { 
             target: 'securemeet',
-            delay :4200,
+            delay :3200,
             duration: 1200
         }, {
             target: 'e-procurement',
-            delay : 6200, 
+            delay : 5200, 
             duration: 2400
         }];
 
