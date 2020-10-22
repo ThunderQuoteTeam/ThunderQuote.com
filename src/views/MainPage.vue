@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="hero-text pt-3">
-                        <h3 class="px-5 pb-2" v-anime="a('tqFadeSlideUp', 1500, 1500)">ThunderQuote is an all-in-one IT services provider, specialising in digital solutions for the non-profit & public sectors. 
+                        <h3 class="px-5 pb-2" v-anime="a('tqFadeSlideUp', 1500, 1500)">ThunderQuote specialises in digital solutions for the non-profit & public sectors. 
                             <br> 
                             Our digital support services & tools will push your organisation's IT capabilities to the next level. We've worked with numerous non-profits, public sector organisations, and MNCs to digitally transform their company, from the inside out.</h3>
 
