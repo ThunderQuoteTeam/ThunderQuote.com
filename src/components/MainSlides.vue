@@ -1,5 +1,5 @@
 <template>
-  <div class="height-inherit">
+  <div class="height-inherit the-host">
     <vueper-slides
     :bullets="false"
     fixed-height="100%"
@@ -36,4 +36,8 @@ export default {
 </script>
 
 <style lang="scss">
+
+.the-host .vueperslides__inner {
+    user-select: text;
+}
 </style>

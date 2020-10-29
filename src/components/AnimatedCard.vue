@@ -67,7 +67,7 @@ article .card-body .card-text {
 .card-pseudo-link article{
     transition: all 0.3s linear;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .card-pseudo-link:hover article{ 
