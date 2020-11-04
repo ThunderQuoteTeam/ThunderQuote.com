@@ -10,6 +10,7 @@
                             <TQLogo id="tq-logo" class="mr-2" v-anime="a('tqFadeSlide')" />
                             <div>
                                 <div class="d-flex align-items-center">
+                                    <h1 class="seo-purposes">ThunderQuote</h1>
                                     <div 
                                         class="logo-text-thunder"
                                         v-anime="a('tqFadeSlideUp', 400)"
@@ -227,5 +228,9 @@ export default {
 
 .top-content {
     flex: 1 0 auto;
+}
+
+.seo-purposes {
+    display: none;
 }
 </style>

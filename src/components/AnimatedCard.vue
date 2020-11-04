@@ -15,7 +15,8 @@
             </b-card-title>
             <div v-anime="cardBodyAnim">
                 <b-card-text>
-                    {{cardBodyText}}
+
+                    <h2 class="card-text seo-friendly">{{cardBodyText}}</h2>
                 </b-card-text>
 
                 <b-button class="my-2" :href="cardLink" variant="primary">{{cardButtonText}}</b-button>
@@ -102,6 +103,11 @@ article .card-body .card-text {
             fill: $primary;
         }
     }
+}
+
+.seo-friendly {
+    font-size: inherit;
+    line-height: inherit;
 }
 
 </style>
