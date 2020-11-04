@@ -30,7 +30,7 @@ new Vue({
   render: h => h(App),
   mounted: () => document.dispatchEvent(new Event("x-app-rendered")),
   created() {
-    window.addEventListener('resize', this.resizeHandler);
+    //window.addEventListener('resize', this.resizeHandler);
   },
   beforeDestroy() {
     window.removeEventListener('resize');

@@ -6,7 +6,7 @@
     :arrows="false" 
     :touchable="false">
     <vueper-slide
-        v-for="(slideIndex, i) in 4"
+        v-for="(slideIndex, i) in 1"
         :key="i"
         >
         <template v-slot:content>
