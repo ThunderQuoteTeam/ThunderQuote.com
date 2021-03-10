@@ -26,6 +26,19 @@ const checkWidth = () => {
   return width;
 }
 
+
+const procurementDomain = 'https://procurement.thunderquote.com/';
+const params = new URLSearchParams(window.location.search);
+
+const post = params.get('p');
+
+if (post) {
+  window.location.href = `${procurementDomain}?p=${post}`;
+  throw new Error('Redirecting...');
+}
+
+
+
 new Vue({
   render: h => h(App),
   mounted: () => document.dispatchEvent(new Event("x-app-rendered")),

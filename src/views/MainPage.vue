@@ -170,12 +170,14 @@ export default {
 }
 
 .logo-text-thunder {
+    opacity: 0;
     font-family: OldSansBlack,Helvetica,sans-serif;
     color: $primary;
     font-size: 2.3rem;
 }
 
 .logo-text-quote {
+    opacity: 0;
     font-family: LiberationSansBold,Helvetica,sans-serif;
     color: #fff;
     font-size: 2.3rem;

@@ -48,11 +48,6 @@ const currentYear = dayjs().tz("Asia/Singapore").format('YYYY');
 
 export default {
     name: 'Footer',
-    methods: {
-        goTo(url) {
-            window.location.href = url;
-        }
-    },
     components: {
         SocialMediaLinks,
         FooterNavigationLinks
@@ -81,8 +76,8 @@ footer {
     width: 100%;
 }
 .mobile-footer {
-    background: $hillcolour;
-    clip-path: url(#wave);
+    /*background: $hillcolour;
+    clip-path: url(#wave);*/
 }
 
 .text-bold {
